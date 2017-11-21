@@ -1,4 +1,5 @@
 (function() {
+
     angular
         .module("storyApp")
         .config(function($routeProvider) {

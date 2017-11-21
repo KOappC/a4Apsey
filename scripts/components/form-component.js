@@ -1,5 +1,5 @@
 (function() {
-    var FormComponent = {
+    var formComponent = {
         controller: "FormController as form",
         /*templateUrl: "./partials/form.html"*/
         template: `
@@ -13,5 +13,5 @@
 
     angular
         .module("storyApp")
-        .component("FormComponent", FormComponent);
+        .component("formComponent", formComponent);
 })();

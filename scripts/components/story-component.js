@@ -1,5 +1,5 @@
 (function() {
-    var StoryComponent = {
+    var storyComponent = {
         controller: "StoryController as story",
         /*templateUrl: "./partials/story.html"*/
         template: `
@@ -9,5 +9,5 @@
 
     angular
         .module("storyApp")
-        .component("StoryComponent", StoryComponent)
+        .component("storyComponent", storyComponent)
 })();
