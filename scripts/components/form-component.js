@@ -7,7 +7,7 @@
             <input ng-model="form.info.color" placeholder="color">
             <input ng-model="form.info.verb" placeholder="verb">
             <input ng-model="form.info.adverb" placeholder="adverb">
-            <button type="button" ng-click="form.setWords(form.info)">Read Story</button>
+            <button type="button" ng-click="form.addWords(form.info)">Read Story</button>
         `
     };
 

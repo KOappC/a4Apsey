@@ -2,17 +2,22 @@
     function StoryService() {
         var dataFromForm = {};
 
-        this.setWords = function(info) {
-            dataFromForm = info;
-            console.log(dataFromForm);
+        return {
+            setWords: setWords,
+            getWords: getWords
         };
 
-        this.getWords = function() {
+        function setWords(info) {
+            dataFromForm = info;
+            console.log(info);
+        }
+
+        function getWords() {
             return dataFromForm;
         }
     }
 
     angular
         .module("storyApp")
-        .service("StoryService", StoryService)
+        .factory("StoryService", StoryService)
 })();
