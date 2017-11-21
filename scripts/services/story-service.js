@@ -9,7 +9,6 @@
 
         function setWords(info) {
             dataFromForm = info;
-            console.log(info);
         }
 
         function getWords() {
