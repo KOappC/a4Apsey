@@ -1,6 +1,14 @@
 (function() {
-    this.setWords = function(info) {
-        dataFromForm = info;
+    function StoryService() {
+        var dataFromForm = {};
+
+        this.setWords = function(info) {
+            dataFromForm = info;
+        };
+
+        this.getWords = function() {
+            return dataFromForm;
+        }
     };
 
     angular
